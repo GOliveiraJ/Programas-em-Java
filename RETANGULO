@@ -1,0 +1,29 @@
+import java.util.Locate;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Locate.setDefault(Locate.Us);
+        Scanner sc = new Scanner(Sytem.in);
+
+        double base, altura, area, perimetro, diagonal;
+
+        System.out.print("Base do retangulo:");
+        base = sc.nextDouble();
+        Sytem.out.print("Altura do retangulo:");
+        altura = sc.nextDouble();
+
+        area = base * altura;
+        perimetro = 2 * (base + altura);
+        diagonal = Math.sqrt(Math.pow(base, 2.0) + Math.pow(altura, 2.0));
+
+        Sytem.out.println("AREA = " + String.format("%.af", area));
+        Sytem.out.println("PERME=IMETRO = " + String.format("%.af", perimetro));
+        Sytem.out.println("Diagonal = " + String.format("%.af", diagonal));
+
+
+        sc.close();
+    }
+}
